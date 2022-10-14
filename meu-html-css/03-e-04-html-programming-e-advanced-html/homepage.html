@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Maria Luísa Papathanasiadis Miguel</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas</h3>
+				<ul>
+					<li><a href="01-introducao.html" target="_blank">Introdução</a></li>
+					<li><a href="02-listas-e-links.html" target="_blank">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-texto.html" target="_blank">Formatação de Texto</a></li>
+					<li><a href="04-tabelas-e-layouts-tabelados.html" target="_blank">Tabelas</a></li>
+					<li><a href="05-elementos-de-layouts.html" target="_blank">Layouts</a></li>
+					<li><a href="06-formularios.html" target="_blank">Formulários</a></li>
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/maria-lu%C3%ADsa-papathanasiadis-miguel-17583a173/" target="_blank">LinkedIn</li>
+					<li><a href="https://www.instagram.com/motherofpigs1/" target="_blank">@motherofpigs1</li>
+					<li><a href="https://www.instagram.com/cafecomdocesoficial/" target="_blank">Café com Doces</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<img width="200" src="https://media-exp1.licdn.com/dms/image/C4D03AQHHRD9ew45SYg/profile-displayphoto-shrink_200_200/0/1540246942127?e=1665619200&v=beta&t=tW8YdHyxESpRobEA1gzG2w8kMf2bRQTeeYH0eFlb3as" height="200" alt="Maria Luísa Papathanasiadis Miguel">
+				
+				<h2>Maria Luísa Papathanasiadis Miguel</h2>
+
+				<p>Administradora com especialização em Marketing digital e futura Desenvolvedora Full Stack Python e Dona e doceira da doceria <strong>Café com Doces</strong> </p>
+				
+
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Maria Luísa Papathanasiadis Miguel</p>
+		</footer>
+		
+	</body>
+</html>

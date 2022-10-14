@@ -1,0 +1,118 @@
+@import 'tables.css';
+
+/* Arquivo CSS geral com estilos dos elementos de todas as páginas */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+body {
+	background-color: #F0F0F0;
+	width: 100%;
+	text-align: center;
+}
+
+header {
+	background-color: #FABE57;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+h2, h3, p, li {
+	color: #7D4218;
+}
+
+section:after {
+	background: #7D4218;
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FABE57;
+}
+
+.topnav a {
+  float: left;
+  color: #7D4218;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D1976D;
+  color: #7D4218;
+}
+
+.topnav a.active {
+  background-color: #F0F0F0;
+  color: #7D4218;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	width: 70%;
+	background-color: #F0F0F0;
+}
+
+footer {
+	background-color: #FABE57;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+h1 {
+	color: #D1976D;
+}
+
+form {
+	background: #FABE57;
+}
+
+form div {
+	border: 0;
+	border-bottom: 1px;
+	margin: 1rem 2rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	color: #7D4218;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+@media (max-width: 600px) {
+	nav, article {
+		width: 50%;
+		height: auto;
+	}
+}

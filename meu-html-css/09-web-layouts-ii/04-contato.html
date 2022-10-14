@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<html lang="pt_br">
+		<head>
+			<title>Petit Malu's</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="./css/reset.css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+		</head>
+
+		<body>
+
+			<header>
+				<h1>PETIT MALU'S</h1>
+			</header>
+
+			<section>
+
+				<div class="topnav">
+					<ul>
+						<li><a href="01-home.html">Home</a></li>
+						<li><a href="02-sobre-nos.html">Sobre Nós</a></li>
+						<li><a href="03-produtos.html">Produtos</a></li>
+						<li><a class="active" href="04-contato.html">Contato</a></li>
+					</ul>
+				</div>
+
+				<article>
+
+					<img src="./imagens/cafe.png" alt="Não gostaria de entrar para tomar uma xícara de café?">
+
+					<h1>Preencha os campos abaixo</h1>
+
+					<form method="post">
+						<div>
+							<label for="nome">Nome</label>
+							<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+						</div>
+
+						<div>
+							<label for="email">E-mail</label>
+							<input type="email" name="email" id="email" placeholder="Digite seu email">
+						</div>
+
+						<div>
+							<label for="telfone">Telefone</label>
+							<input type="text" name="telefone" id="telefone" placeholder="Digite seu número de telefone com DDD">
+						</div>
+
+						<div>
+							<label for="mensagem">Mensagem</label>
+							<textarea name="mensagem" id="mensagem" rows="5" placeholder="Qual o seu pedido?"></textarea>
+						</div>
+
+						<div>
+							<p>
+								<label>Como nos achou?</label>
+								<input type="radio" name="como" value="google"> Google
+								<input type="radio" name="como" value="instagram"> Instagram
+								<input type="radio" name="como" value="amigos"> Amigos
+								<input type="radio" name="como" value="ponto-de-venda"> Ponto de Venda
+							</p>
+						</div>
+
+						<div>
+							<input type="submit">
+						</div>
+					</form>
+
+				</article>
+
+			</section>
+
+			<footer>
+				<p>WhatsApp: +55 (11) 983-599-934</p>
+				<p>@ 2022 por Maria Luísa Papathanasiadis Miguel | Todos os direitos reservados.</p>
+			</footer>
+
+		</body>
+	</html>

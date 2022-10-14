@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<tilte>HTML - Elementos de layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum dui faucibus in ornare. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Quis blandit turpis cursus in. Nulla facilisi cras fermentum odio eu feugiat pretium. Tincidunt vitae semper quis lectus. Dolor morbi non arcu risus quis. Purus viverra accumsan in nisl nisi. Nisl nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac. Diam in arcu cursus euismod quis viverra. In pellentesque massa placerat duis ultricies lacus sed turpis. Velit scelerisque in dictum non consectetur.</p>
+
+				<p>Magna fringilla urna porttitor rhoncus dolor purus non. Morbi tristique senectus et netus et. Viverra nibh cras pulvinar mattis. Tristique magna sit amet purus gravida quis blandit. Sit amet dictum sit amet justo donec enim. Quis ipsum suspendisse ultrices gravida. Molestie a iaculis at erat pellentesque adipiscing. In hac habitasse platea dictumst vestibulum rhoncus. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Sit amet consectetur adipiscing elit pellentesque. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Et tortor consequat id porta nibh venenatis. Donec adipiscing tristique risus nec feugiat in. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Accumsan tortor posuere ac ut consequat semper viverra nam libero. Sit amet massa vitae tortor.</p>
+
+			</article>
+
+		</section>
+
+		<footer>
+
+			<p>Desenvolvido por Maria Luísa Papathanasiadis Miguel</p>
+			
+		</footer>
+
+	</body>
+</html>
